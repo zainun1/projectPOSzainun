@@ -37,11 +37,12 @@
                 <div class="form-group">
                     <label>Kategori</label>
                     <select class="form-control" name="category_id">
-                        @foreach($data as $dt )
-                        <option value="{{ $dt->id }}" @if($dt->id===$produk->category_id) selected
-                            @endif>{{ $dt->name }}
-                        </option>
-                        @endforeach
+                        @foreach($kategori as $dt)
+    <option value="{{ $dt->id }}"
+        {{ $dt->id == $produk->category_id ? 'selected' : '' }}>
+        {{ $dt->name }}
+    </option>
+@endforeach
                     </select>
                 </div>
                 <div class="form-group">

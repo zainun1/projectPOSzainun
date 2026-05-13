@@ -96,6 +96,14 @@
                                 <p>Customer</p>
                             </a>
                         </li>
+<li class="nav-item">
+    <a href="{{ route('pengguna.index') }}" class="nav-link {{ ($title === 'Users') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-users"></i>
+        <p>
+            Users
+        </p>
+    </a>
+</li>
 
                         <li class="nav-item">
                             <a href="#" class="nav-link {{ ($title==='Pembelian') ? 'active':'' }}">
